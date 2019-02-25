@@ -1,5 +1,7 @@
 import {EXAMPLE_ACTION} from '../constants/ActionTypes';
 
-export const exampleAction = () => ({
+const exampleAction = () => ({
   type: EXAMPLE_ACTION,
 });
+
+export default exampleAction;
