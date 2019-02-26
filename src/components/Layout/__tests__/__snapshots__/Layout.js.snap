@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Layout 1`] = `
+<Container>
+  <Connect(Navbar) />
+  <Header
+    as="h2"
+  >
+    Welcome to Leadscore
+  </Header>
+  <Grid
+    centered={true}
+  >
+    <GridRow>
+      <GridColumn>
+        <ExamplePage />
+      </GridColumn>
+    </GridRow>
+  </Grid>
+</Container>
+`;

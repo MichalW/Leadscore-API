@@ -1,28 +1,22 @@
 import React from 'react';
+import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 
 import Layout from '../Layout';
 import Navbar from '../../Navbar';
-import Login from '../../Login';
 
-it('renders Layout signedIn', () => {
-  const props = {
-    signedIn: true,
-    username: 'ExampleUsername',
-  };
+it('renders Layout', () => {
+  const ExamplePage = () => (
+    <div>Example text</div>
+  );
 
-  const layout = shallow(<Layout {...props} />);
+  const layout = shallow(
+    <Layout>
+      <ExamplePage />
+    </Layout>
+  );
 
   expect(layout.find(Navbar).exists()).toBe(true);
-  expect(layout.find(Login).exists()).toBe(false);
-});
-
-it('renders Layout signedOut', () => {
-  const props = {
-    signedIn: false,
-  };
-
-  const layout = shallow(<Layout {...props} />);
-
-  expect(layout.find(Login).exists()).toBe(true);
+  expect(layout.find(ExamplePage).exists()).toBe(true);
+  expect(toJson(layout)).toMatchSnapshot();
 });

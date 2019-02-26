@@ -7,5 +7,6 @@ it('renders Login without crashing', () => {
   const tree = renderer
     .create(<Login signInRequest={() => {}} />)
     .toJSON();
+
   expect(tree).toMatchSnapshot();
 });

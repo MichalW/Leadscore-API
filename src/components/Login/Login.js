@@ -5,7 +5,7 @@ import {Grid} from 'semantic-ui-react';
 import LoginForm from './LoginForm';
 
 const Login = ({signInRequest}) => (
-  <Grid columns={3} centered>
+  <Grid columns={3} centered verticalAlign="middle" style={{minHeight: '100vh'}}>
     <Grid.Row>
       <Grid.Column>
         <LoginForm signInRequest={signInRequest} />

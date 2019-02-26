@@ -10,11 +10,15 @@ exports[`renders Navbar without crashing 1`] = `
   >
     Home
   </a>
-  <a
-    className="item"
-    onClick={[Function]}
+  <div
+    className="right menu"
   >
-    Logout
-  </a>
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Logout
+    </a>
+  </div>
 </div>
 `;

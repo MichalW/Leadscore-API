@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import {Container, Header} from 'semantic-ui-react';
+import {Container, Grid, Header} from 'semantic-ui-react';
 
-import Login from '../Login';
 import Navbar from '../Navbar';
 
-const Layout = ({signedIn, username}) => (
+const Layout = ({children}) => (
   <Container>
     <Navbar />
 
@@ -13,24 +12,18 @@ const Layout = ({signedIn, username}) => (
       Welcome to Leadscore
     </Header>
 
-    {signedIn ? (
-      <div>
-        {`Signed in as ${username}`}
-      </div>
-    ) : (
-      <Login />
-    )}
-
+    <Grid centered>
+      <Grid.Row>
+        <Grid.Column>
+          {children}
+        </Grid.Column>
+      </Grid.Row>
+    </Grid>
   </Container>
 );
 
-Layout.defaultProps = {
-  username: '',
-};
-
 Layout.propTypes = {
-  signedIn: PropTypes.bool.isRequired,
-  username: PropTypes.string,
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render App signed in 1`] = `
+<BrowserRouter>
+  <Route
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+</BrowserRouter>
+`;
+
+exports[`should render App signed out 1`] = `<Connect(Login) />`;

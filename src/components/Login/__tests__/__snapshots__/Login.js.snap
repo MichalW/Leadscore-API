@@ -2,7 +2,12 @@
 
 exports[`renders Login without crashing 1`] = `
 <div
-  className="ui centered three column grid"
+  className="ui centered middle aligned three column grid"
+  style={
+    Object {
+      "minHeight": "100vh",
+    }
+  }
 >
   <div
     className="row"
