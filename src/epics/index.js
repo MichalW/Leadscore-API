@@ -1,9 +1,11 @@
 import {ajax} from 'rxjs/ajax';
 import {combineEpics} from 'redux-observable';
-import {signInRequestEpic} from './authentication';
+
+import {signInRequest, signOutRequest} from './authentication';
 
 const rootEpic = (...args) => combineEpics(
-  signInRequestEpic,
+  signInRequest,
+  signOutRequest,
 )(...args, {ajax});
 
 export default rootEpic;

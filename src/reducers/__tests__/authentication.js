@@ -1,7 +1,7 @@
 import reducer from '../authentication';
 import * as types from '../../constants/ActionTypes';
 
-it('authentication reducer', () => {
+it('authentication reducer should handle SIGN_IN_SUCCESS', () => {
   const action = {
     type: types.SIGN_IN_SUCCESS,
     payload: {
@@ -26,6 +26,30 @@ it('authentication reducer', () => {
     user: {
       username: 'exampleUsername',
     },
+  };
+
+  expect(expectedState).toMatchObject(responseState);
+});
+
+it('authentication reducer should handle SIGN_OUT_SUCCESS', () => {
+  const action = {
+    type: types.SIGN_OUT_SUCCESS,
+  };
+
+  const initialState = {
+    signedIn: true,
+    token: 'Token123',
+    user: {
+      username: 'ExampleUsername',
+    },
+  };
+
+  const responseState = reducer(initialState, action);
+
+  const expectedState = {
+    signedIn: false,
+    token: {},
+    user: {},
   };
 
   expect(expectedState).toMatchObject(responseState);

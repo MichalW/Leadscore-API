@@ -31,7 +31,6 @@ it('should create signInSuccess action', () => {
   expect(expectedAction).toMatchObject(responseAction);
 });
 
-
 it('should create signInError action', () => {
   const expectedAction = {
     type: types.SIGN_IN_ERROR,
@@ -41,6 +40,39 @@ it('should create signInError action', () => {
   };
 
   const responseAction = actions.signInError('404');
+
+  expect(expectedAction).toMatchObject(responseAction);
+});
+
+it('should create signOutRequest action', () => {
+  const expectedAction = {
+    type: types.SIGN_OUT_REQUEST,
+  };
+
+  const responseAction = actions.signOutRequest();
+
+  expect(expectedAction).toMatchObject(responseAction);
+});
+
+it('should create signOutSuccess action', () => {
+  const expectedAction = {
+    type: types.SIGN_OUT_SUCCESS,
+  };
+
+  const responseAction = actions.signOutSuccess();
+
+  expect(expectedAction).toMatchObject(responseAction);
+});
+
+it('should create signOutError action', () => {
+  const expectedAction = {
+    type: types.SIGN_OUT_ERROR,
+    payload: {
+      error: '404',
+    },
+  };
+
+  const responseAction = actions.signOutError('404');
 
   expect(expectedAction).toMatchObject(responseAction);
 });

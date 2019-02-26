@@ -1,3 +1,4 @@
 serviceWorker.js
+setupTests.js
 *.test.js
 __tests__

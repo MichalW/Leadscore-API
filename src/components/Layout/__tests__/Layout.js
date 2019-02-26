@@ -1,11 +1,28 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import {shallow} from 'enzyme';
 
 import Layout from '../Layout';
+import Navbar from '../../Navbar';
+import Login from '../../Login';
 
-it('renders Layout signedIn without crashing', () => {
-  const tree = renderer
-    .create(<Layout signedIn username="ExampleUsername" />)
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+it('renders Layout signedIn', () => {
+  const props = {
+    signedIn: true,
+    username: 'ExampleUsername',
+  };
+
+  const layout = shallow(<Layout {...props} />);
+
+  expect(layout.find(Navbar).exists()).toBe(true);
+  expect(layout.find(Login).exists()).toBe(false);
+});
+
+it('renders Layout signedOut', () => {
+  const props = {
+    signedIn: false,
+  };
+
+  const layout = shallow(<Layout {...props} />);
+
+  expect(layout.find(Login).exists()).toBe(true);
 });

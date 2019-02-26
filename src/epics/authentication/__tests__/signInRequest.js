@@ -1,7 +1,7 @@
 import {ActionsObservable} from 'redux-observable';
 
-import * as epics from '../authentication';
-import * as types from '../../constants/ActionTypes';
+import * as epics from '../../authentication';
+import * as types from '../../../constants/ActionTypes';
 
 it('should get SIGN_IN_SUCCESS from signInRequest', () => {
   const response = {
@@ -29,7 +29,7 @@ it('should get SIGN_IN_SUCCESS from signInRequest', () => {
     },
   };
 
-  epics.signInRequestEpic(action$, null, {ajax}).subscribe(
+  epics.signInRequest(action$, null, {ajax}).subscribe(
     (responseAction) => {
       expect(expectedOutput).toMatchObject(responseAction)
     }

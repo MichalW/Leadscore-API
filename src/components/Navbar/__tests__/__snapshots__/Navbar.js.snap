@@ -14,7 +14,7 @@ exports[`renders Navbar without crashing 1`] = `
     className="item"
     onClick={[Function]}
   >
-    Login
+    Logout
   </a>
 </div>
 `;

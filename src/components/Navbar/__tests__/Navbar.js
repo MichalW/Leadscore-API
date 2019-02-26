@@ -5,7 +5,12 @@ import Navbar from '../Navbar';
 
 it('renders Navbar without crashing', () => {
   const tree = renderer
-    .create(<Navbar />)
+    .create(
+      <Navbar
+        signOutRequest={() => {}}
+        signedIn
+      />
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
