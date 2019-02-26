@@ -2,7 +2,7 @@
 
 exports[`renders Login without crashing 1`] = `
 <div
-  className="ui centered middle aligned three column grid"
+  className="ui centered middle aligned three column grid background-blue"
   style={
     Object {
       "minHeight": "100vh",
@@ -15,6 +15,14 @@ exports[`renders Login without crashing 1`] = `
     <div
       className="column"
     >
+      <h1
+        className="ui header"
+      >
+        <strong>
+          Lead
+        </strong>
+        score
+      </h1>
       <form
         className="ui form"
         onSubmit={[Function]}
@@ -59,7 +67,7 @@ exports[`renders Login without crashing 1`] = `
             />
           </div>
           <button
-            className="ui fluid button"
+            className="ui fluid primary button"
             onClick={[Function]}
             type="submit"
           >

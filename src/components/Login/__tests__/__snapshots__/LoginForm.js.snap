@@ -45,7 +45,7 @@ exports[`renders LoginForm without crashing 1`] = `
       />
     </div>
     <button
-      className="ui fluid button"
+      className="ui fluid primary button"
       onClick={[Function]}
       type="submit"
     >

@@ -1,0 +1,26 @@
+body {
+  background-color: #eeeeee;
+  padding-top: 50px;
+}
+
+.background-blue {
+  background-color: #156ac3;
+}
+
+.ui.menu {
+  background-color: #156ac3;
+}
+
+.ui.menu a.item {
+  color: white;
+}
+
+.ui.menu a.item:hover {
+  color: #cccccc;
+}
+
+h1.ui.header {
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}

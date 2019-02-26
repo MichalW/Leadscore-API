@@ -2,23 +2,27 @@
 
 exports[`renders Navbar without crashing 1`] = `
 <div
-  className="ui large menu"
+  className="ui huge top fixed menu"
 >
-  <a
-    className="item"
-    onClick={[Function]}
-  >
-    Home
-  </a>
   <div
-    className="right menu"
+    className="ui container"
   >
     <a
       className="item"
       onClick={[Function]}
     >
-      Logout
+      Home
     </a>
+    <div
+      className="right menu"
+    >
+      <a
+        className="item"
+        onClick={[Function]}
+      >
+        Logout
+      </a>
+    </div>
   </div>
 </div>
 `;

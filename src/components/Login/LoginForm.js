@@ -41,7 +41,7 @@ class LoginForm extends PureComponent {
             <input placeholder="Password" type="password" onChange={this.onChangePassword} value={password} />
           </Form.Field>
 
-          <Button type="submit" fluid>Login</Button>
+          <Button type="submit" fluid primary>Login</Button>
         </Segment>
       </Form>
     );

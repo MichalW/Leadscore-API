@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import {Segment} from 'semantic-ui-react';
 
 import Layout from '../Layout';
 
 const Home = ({username}) => (
   <Layout>
-    <div>
+    <Segment>
       {`Signed in as ${username}`}
-    </div>
+    </Segment>
   </Layout>
 );
 
