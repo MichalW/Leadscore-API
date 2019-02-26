@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Layout signedIn without crashing 1`] = `
+<div
+  className="ui container"
+>
+  <div
+    className="ui large menu"
+  >
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="item"
+      onClick={[Function]}
+    >
+      Login
+    </a>
+  </div>
+  <h2
+    className="ui header"
+  >
+    Welcome to Leadscore
+  </h2>
+  <div>
+    Signed in as ExampleUsername
+  </div>
+</div>
+`;

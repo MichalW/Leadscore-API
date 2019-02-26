@@ -1,14 +1,12 @@
-import {ajax} from 'rxjs/ajax';
 import {catchError, map, mergeMap} from 'rxjs/operators';
 import {ofType} from 'redux-observable';
 import {of} from 'rxjs';
 
 import {API_URL} from '../config';
 import {SIGN_IN_REQUEST} from '../constants/ActionTypes';
-import {handleError} from '../actions/errorHandler';
-import {signInSuccess} from '../actions/authentication';
+import {signInError, signInSuccess} from '../actions/authentication';
 
-const authenticationEpic = action$ => action$.pipe(
+export const signInRequestEpic = (action$, state$, {ajax}) => action$.pipe(
   ofType(SIGN_IN_REQUEST),
   mergeMap(action => ajax({
     url: `${API_URL}/login`,
@@ -22,8 +20,6 @@ const authenticationEpic = action$ => action$.pipe(
     }),
   }).pipe(
     map(({response: {token, user}}) => signInSuccess(token, user)),
-    catchError(error => of(handleError(error))),
+    catchError(error => of(signInError(error))),
   )),
 );
-
-export default authenticationEpic;

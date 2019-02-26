@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Navbar without crashing 1`] = `
+<div
+  className="ui large menu"
+>
+  <a
+    className="item"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+  <a
+    className="item"
+    onClick={[Function]}
+  >
+    Login
+  </a>
+</div>
+`;

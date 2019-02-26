@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Login without crashing 1`] = `
+<div
+  className="ui centered three column grid"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="column"
+    >
+      <form
+        className="ui form"
+        onSubmit={[Function]}
+      >
+        <div
+          className="ui segment"
+        >
+          <div
+            className="field"
+          >
+            <div
+              className="ui label"
+              onClick={[Function]}
+            >
+              Login
+            </div>
+            <div
+              className="ui input"
+            >
+              <input
+                onChange={[Function]}
+                placeholder="Login"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            className="field"
+          >
+            <div
+              className="ui label"
+              onClick={[Function]}
+            >
+              Password
+            </div>
+            <input
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+              value=""
+            />
+          </div>
+          <button
+            className="ui fluid button"
+            onClick={[Function]}
+            type="submit"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
