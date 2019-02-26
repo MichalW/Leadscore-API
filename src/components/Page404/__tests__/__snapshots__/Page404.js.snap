@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Page404 1`] = `
+<Layout>
+  <Segment>
+    Page not found (404)
+  </Segment>
+</Layout>
+`;

@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import {PersistGate} from 'redux-persist/integration/react';
 import {Provider} from 'react-redux';
 
-import './index.css';
-import App from './containers/App';
+import './styles/index.scss';
 import * as serviceWorker from './serviceWorker';
+import App from './containers/App';
 import {store, persistor} from './utils/configureStore';
 
 const elementRoot = document.getElementById('root');

@@ -2,11 +2,20 @@
 
 exports[`should render App signed in 1`] = `
 <BrowserRouter>
-  <Route
-    component={[Function]}
-    exact={true}
-    path="/"
-  />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/contacts"
+    />
+    <Route
+      component={[Function]}
+    />
+  </Switch>
 </BrowserRouter>
 `;
 

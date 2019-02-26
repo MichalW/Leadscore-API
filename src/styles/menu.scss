@@ -1,0 +1,11 @@
+.ui.menu {
+  background-color: #156ac3;
+
+  a.item {
+    color: white;
+
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}

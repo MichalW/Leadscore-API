@@ -1,28 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders Navbar without crashing 1`] = `
-<div
-  className="ui huge top fixed menu"
+<Menu
+  fixed="top"
+  size="huge"
 >
-  <div
-    className="ui container"
-  >
-    <a
-      className="item"
-      onClick={[Function]}
+  <Container>
+    <MenuItem
+      as={[Function]}
+      name="home"
+      to="/"
+    />
+    <MenuItem
+      as={[Function]}
+      name="contacts"
+      to="/contacts"
+    />
+    <MenuMenu
+      position="right"
     >
-      Home
-    </a>
-    <div
-      className="right menu"
-    >
-      <a
-        className="item"
+      <MenuItem
+        name="logout"
         onClick={[Function]}
-      >
-        Logout
-      </a>
-    </div>
-  </div>
-</div>
+      />
+    </MenuMenu>
+  </Container>
+</Menu>
 `;

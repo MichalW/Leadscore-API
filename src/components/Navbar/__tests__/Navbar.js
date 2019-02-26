@@ -1,16 +1,15 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import toJson from 'enzyme-to-json';
+import {shallow} from 'enzyme/build';
 
 import Navbar from '../Navbar';
 
 it('renders Navbar without crashing', () => {
-  const tree = renderer
-    .create(
-      <Navbar
-        signOutRequest={() => {}}
-        signedIn
-      />
-    )
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+  const props = {
+    signOutRequest: () => {},
+  };
+
+  const navbar = shallow(<Navbar {...props} />);
+
+  expect(toJson(navbar)).toMatchSnapshot();
 });
