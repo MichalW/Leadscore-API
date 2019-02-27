@@ -8,11 +8,13 @@ exports[`renders Navbar without crashing 1`] = `
   <Container>
     <MenuItem
       as={[Function]}
+      icon="home"
       name="home"
       to="/"
     />
     <MenuItem
       as={[Function]}
+      icon="users"
       name="contacts"
       to="/contacts"
     />
@@ -20,6 +22,7 @@ exports[`renders Navbar without crashing 1`] = `
       position="right"
     >
       <MenuItem
+        icon="sign-out"
         name="logout"
         onClick={[Function]}
       />

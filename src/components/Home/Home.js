@@ -1,13 +1,22 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import {Segment} from 'semantic-ui-react';
+import {Header, Icon, Segment} from 'semantic-ui-react';
 
 import Layout from '../Layout';
 
 const Home = ({username}) => (
   <Layout>
     <Segment>
-      {`Signed in as ${username}`}
+      <Header as="h2">
+        <Icon name="home" />
+        <Header.Content>
+          Home
+        </Header.Content>
+      </Header>
+
+      <p>
+        {`Signed in as ${username}`}
+      </p>
     </Segment>
   </Layout>
 );

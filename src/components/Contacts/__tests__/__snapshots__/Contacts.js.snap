@@ -1,9 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Home 1`] = `
+exports[`should render Contacts 1`] = `
 <Layout>
   <Segment>
-    Contacts
+    <Header
+      as="h2"
+    >
+      <Icon
+        as="i"
+        name="users"
+      />
+      <HeaderContent>
+        Contacts
+        <HeaderSubheader>
+          Manage your contacts
+        </HeaderSubheader>
+      </HeaderContent>
+    </Header>
+    <Table
+      as="table"
+      celled={true}
+      selectable={true}
+    >
+      <ContactsHeader />
+      <TableBody
+        as="tbody"
+      />
+    </Table>
+    <withRouter(Connect(ContactsPagination)) />
   </Segment>
 </Layout>
 `;

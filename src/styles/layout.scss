@@ -1,17 +1,26 @@
 body {
-  background-color: #eeeeee;
+  background-color: $color-grey;
 
-  & > div {
-    padding-top: 50px;
+  #root {
+    display: block;
+  }
+
+  & > div > div {
+    padding-top: 25px;
   }
 }
 
 .background-blue {
-  background-color: #156ac3;
+  background-color: $color-blue;
 }
 
 h1.ui.header {
   color: white;
   font-weight: normal;
   text-align: center;
+}
+
+h2.ui.header {
+  padding: 25px 10px;
+  color: $color-blue;
 }

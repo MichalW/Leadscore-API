@@ -3,15 +3,21 @@ import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 
 import Contacts from '../Contacts';
-import Layout from '../../Layout';
+import ContactsHeader from '../ContactsHeader'
 
-it('should render Home', () => {
+it('should render Contacts', () => {
   const props = {
-    username: 'ExampleUsername',
+    contactsData: [],
+    contactsFetchRequest: () => {},
+    match: {
+      params: {
+        page: 1,
+      },
+    },
   };
 
-  const home = shallow(<Contacts {...props} />);
+  const contacts = shallow(<Contacts {...props} />);
 
-  expect(home.find(Layout).exists()).toBe(true);
-  expect(toJson(home)).toMatchSnapshot();
+  expect(contacts.find(ContactsHeader).exists()).toBe(true);
+  expect(toJson(contacts)).toMatchSnapshot();
 });

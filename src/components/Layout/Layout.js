@@ -3,17 +3,18 @@ import React from 'react';
 import {Container, Grid} from 'semantic-ui-react';
 
 import Navbar from '../Navbar';
+import Breadcrumb from '../Breadcrumb';
 
 const Layout = ({children}) => (
   <Container>
     <Navbar />
 
+    <Breadcrumb />
+
     <Grid centered>
       <Grid.Row>
         <Grid.Column>
-          <Container>
-            {children}
-          </Container>
+          {children}
         </Grid.Column>
       </Grid.Row>
     </Grid>

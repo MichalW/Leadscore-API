@@ -3,7 +3,20 @@
 exports[`should render Home 1`] = `
 <Layout>
   <Segment>
-    Signed in as ExampleUsername
+    <Header
+      as="h2"
+    >
+      <Icon
+        as="i"
+        name="home"
+      />
+      <HeaderContent>
+        Home
+      </HeaderContent>
+    </Header>
+    <p>
+      Signed in as ExampleUsername
+    </p>
   </Segment>
 </Layout>
 `;

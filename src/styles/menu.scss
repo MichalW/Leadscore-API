@@ -1,11 +1,11 @@
 .ui.menu {
-  background-color: #156ac3;
+  background-color: $color-blue;
 
   a.item {
-    color: white;
+    color: $color-white;
 
     &:hover {
-      color: #cccccc;
+      color: $color-grey;
     }
   }
 }

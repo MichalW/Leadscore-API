@@ -16,7 +16,7 @@ const App = ({signedIn}) => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/contacts" component={Contacts} />
+        <Route path="/contacts/:page?" component={Contacts} />
         <Route component={Page404} />
       </Switch>
     </Router>

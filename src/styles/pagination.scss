@@ -1,0 +1,10 @@
+.ui.pagination.menu {
+  .item {
+    color: $color-grey;
+
+    &.active {
+      color: $color-white;
+      font-weight: bold;
+    }
+  }
+}

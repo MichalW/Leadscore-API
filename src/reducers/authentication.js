@@ -1,4 +1,4 @@
-import {SIGN_IN_SUCCESS, SIGN_OUT_SUCCESS} from '../constants/ActionTypes';
+import {SIGN_IN_SUCCESS, SIGN_OUT_SUCCESS, SIGN_OUT_ERROR} from '../constants/ActionTypes';
 
 const initialState = {
   signedIn: false,
@@ -17,6 +17,7 @@ const authentication = (state = initialState, action) => {
         token: payload.token,
         user: payload.user,
       };
+    case SIGN_OUT_ERROR:
     case SIGN_OUT_SUCCESS:
       return initialState;
     default:

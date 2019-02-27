@@ -3,14 +3,13 @@
 exports[`renders Layout 1`] = `
 <Container>
   <Connect(Navbar) />
+  <withRouter(BreadcrumbComponent) />
   <Grid
     centered={true}
   >
     <GridRow>
       <GridColumn>
-        <Container>
-          <ExamplePage />
-        </Container>
+        <ExamplePage />
       </GridColumn>
     </GridRow>
   </Grid>

@@ -1,9 +1,16 @@
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import Contacts from './Contacts';
+import {contactsFetchRequest} from '../../actions/contacts';
 
 const mapStateToProps = state => ({
-  username: state.authentication.user.username,
+  contactsData: state.contacts.data,
+  contactsCount: state.contacts.count,
 });
 
-export default connect(mapStateToProps)(Contacts);
+const mapDispatchToProps = dispatch => ({
+  contactsFetchRequest: bindActionCreators(contactsFetchRequest, dispatch),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contacts);
