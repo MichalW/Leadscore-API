@@ -14,8 +14,10 @@ it('authentication reducer should handle SIGN_IN_SUCCESS', () => {
 
   const initialState = {
     signedIn: false,
-    token: '',
+    token: {},
     user: {},
+    error: true,
+    loading: true,
   };
 
   const responseState = reducer(initialState, action);
@@ -26,6 +28,8 @@ it('authentication reducer should handle SIGN_IN_SUCCESS', () => {
     user: {
       username: 'exampleUsername',
     },
+    error: false,
+    loading: false,
   };
 
   expect(expectedState).toMatchObject(responseState);
@@ -42,6 +46,8 @@ it('authentication reducer should handle SIGN_OUT_SUCCESS', () => {
     user: {
       username: 'ExampleUsername',
     },
+    error: false,
+    loading: false,
   };
 
   const responseState = reducer(initialState, action);
@@ -50,6 +56,8 @@ it('authentication reducer should handle SIGN_OUT_SUCCESS', () => {
     signedIn: false,
     token: {},
     user: {},
+    error: false,
+    loading: false,
   };
 
   expect(expectedState).toMatchObject(responseState);

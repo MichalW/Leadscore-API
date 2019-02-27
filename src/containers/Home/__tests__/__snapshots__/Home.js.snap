@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Home 1`] = `
+<Layout>
+  <Segment>
+    <HeaderComponent
+      icon="home"
+      title="Home"
+    />
+    <p>
+      Hello 
+      <strong>
+        ExampleUsername
+      </strong>
+    </p>
+  </Segment>
+</Layout>
+`;

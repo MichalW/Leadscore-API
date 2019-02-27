@@ -8,15 +8,15 @@ import {signInError, signInSuccess} from '../../actions/authentication';
 
 const signInRequest = (action$, state$, {ajax}) => action$.pipe(
   ofType(SIGN_IN_REQUEST),
-  mergeMap(action => ajax({
+  mergeMap(({payload: {username, password}}) => ajax({
     url: `${API_URL}/login`,
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      username: action.payload.username,
-      password: action.payload.password,
+      username,
+      password,
     }),
   }).pipe(
     map(({response: {token, user}}) => signInSuccess(token, user)),

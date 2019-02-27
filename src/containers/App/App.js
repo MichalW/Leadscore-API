@@ -2,17 +2,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import Login from '../../components/Login';
-import Home from '../../components/Home';
-import Contacts from '../../components/Contacts';
-import Page404 from '../../components/Page404';
+import Contacts from '../Contacts';
+import Home from '../Home';
+import Login from '../Login';
+import Page404 from '../Page404';
 
-const App = ({signedIn}) => {
-  if (!signedIn) {
-    return (<Login />);
-  }
-
-  return (
+const App = ({signedIn}) => (
+  signedIn ? (
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -20,8 +16,10 @@ const App = ({signedIn}) => {
         <Route component={Page404} />
       </Switch>
     </Router>
-  );
-};
+  ) : (
+    <Login />
+  )
+);
 
 App.propTypes = {
   signedIn: PropTypes.bool.isRequired,

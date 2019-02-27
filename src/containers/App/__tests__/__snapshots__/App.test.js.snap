@@ -19,4 +19,4 @@ exports[`should render App signed in 1`] = `
 </BrowserRouter>
 `;
 
-exports[`should render App signed out 1`] = `<Connect(Login) />`;
+exports[`should render App signed out 1`] = `<Login />`;

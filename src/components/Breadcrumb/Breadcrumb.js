@@ -4,8 +4,8 @@ import capitalize from 'lodash/capitalize';
 import {Breadcrumb, Grid} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 
-const BreadcrumbComponent = ({location: {pathname}}) => {
-  const routeTitle = capitalize(pathname.slice(1));
+const BreadcrumbComponent = ({location: {pathname = ''}}) => {
+  const routeTitle = capitalize(pathname.split('/')[1]);
 
   return (
     <Grid>

@@ -3,7 +3,7 @@ import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 
 import App from '../App';
-import Login from '../../../components/Login';
+import Login from '../../Login';
 
 it('should render App signed out', () => {
   const props = {

@@ -3,6 +3,7 @@ body {
 
   #root {
     display: block;
+    min-height: 100vh;
   }
 
   & > div > div {
@@ -23,4 +24,8 @@ h1.ui.header {
 h2.ui.header {
   padding: 25px 10px;
   color: $color-blue;
+}
+
+.ui.dimmer .ui.loader {
+  top: 20%;
 }

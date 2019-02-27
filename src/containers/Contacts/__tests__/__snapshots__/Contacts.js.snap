@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Home 1`] = `
+<Layout>
+  <Segment>
+    <HeaderComponent
+      icon="users"
+      subTitle="Manage your contacts"
+      title="Contacts"
+    />
+    <withRouter(Connect(ContactsList)) />
+  </Segment>
+</Layout>
+`;

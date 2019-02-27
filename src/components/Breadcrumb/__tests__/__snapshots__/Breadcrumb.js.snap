@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Breadcrumb on page 1`] = `
+<Grid>
+  <GridRow>
+    <GridColumn>
+      <Breadcrumb>
+        <BreadcrumbSection
+          as={[Function]}
+          link={true}
+          to="/"
+        >
+          Leadscore
+        </BreadcrumbSection>
+        <BreadcrumbDivider
+          icon="right angle"
+          key="divider"
+        />
+        <BreadcrumbSection
+          key="title"
+        >
+          Example
+        </BreadcrumbSection>
+      </Breadcrumb>
+    </GridColumn>
+  </GridRow>
+</Grid>
+`;
+
+exports[`should render Breadcrumb on root 1`] = `
+<Grid>
+  <GridRow>
+    <GridColumn>
+      <Breadcrumb>
+        <BreadcrumbSection
+          as={[Function]}
+          link={true}
+          to="/"
+        >
+          Leadscore
+        </BreadcrumbSection>
+      </Breadcrumb>
+    </GridColumn>
+  </GridRow>
+</Grid>
+`;

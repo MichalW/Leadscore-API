@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Contacts 1`] = `
+<section>
+  <Table
+    as="table"
+    color="blue"
+    selectable={true}
+    striped={true}
+  >
+    <ContactsHeader />
+    <TableBody
+      as="tbody"
+    />
+    <ContactsHeader
+      text="0/30 contacts"
+    />
+  </Table>
+  <withRouter(Connect(ContactsPagination)) />
+</section>
+`;
