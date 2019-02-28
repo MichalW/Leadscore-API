@@ -32,7 +32,7 @@ exports[`should render ContactsItem 1`] = `
   <TableCell
     as="td"
   >
-    Wed, Feb 27, 2019 11:48 AM
+    Wed, Feb 27, 2019 10:48 AM
   </TableCell>
 </TableRow>
 `;
