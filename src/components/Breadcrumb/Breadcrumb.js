@@ -1,8 +1,9 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import capitalize from 'lodash/capitalize';
 import {Breadcrumb, Grid} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
+
+import {locationType} from '../../constants/PropTypes';
 
 const BreadcrumbComponent = ({location: {pathname = ''}}) => {
   const routeTitle = capitalize(pathname.split('/')[1]);
@@ -28,9 +29,7 @@ const BreadcrumbComponent = ({location: {pathname = ''}}) => {
 };
 
 BreadcrumbComponent.propTypes = {
-  location: PropTypes.shape({
-    pathname: PropTypes.string,
-  }).isRequired,
+  location: locationType.isRequired,
 };
 
 export default BreadcrumbComponent;

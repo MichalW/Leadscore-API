@@ -1,4 +1,3 @@
-import React from 'react';
 import getColorFromInitials from '../getColorFromInitials';
 
 it('renders LoginForm with loading', () => {

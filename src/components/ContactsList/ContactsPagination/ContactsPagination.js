@@ -3,6 +3,7 @@ import React, {PureComponent} from 'react';
 import {Container, Pagination} from 'semantic-ui-react';
 
 import {DEFAULT_CONTACTS_LIMIT} from '../../../config';
+import {historyType} from '../../../constants/PropTypes';
 
 class ContactsPagination extends PureComponent {
   onPageChange = (event, {activePage}) => {
@@ -29,7 +30,7 @@ class ContactsPagination extends PureComponent {
 
 ContactsPagination.propTypes = {
   contactsCount: PropTypes.number.isRequired,
-  history: PropTypes.shape({}).isRequired,
+  history: historyType.isRequired,
 };
 
 export default ContactsPagination;

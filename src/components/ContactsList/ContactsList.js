@@ -8,6 +8,7 @@ import ContactsHeader from './ContactsHeader';
 import ContactsItem from './ContactsItem';
 import ContactsPagination from './ContactsPagination';
 import {DEFAULT_CONTACTS_LIMIT} from '../../config';
+import {matchType} from '../../constants/PropTypes';
 
 class ContactsList extends PureComponent {
   componentDidMount() {
@@ -51,7 +52,7 @@ class ContactsList extends PureComponent {
 
           <Table.Body>
             {contactsData.map(contact => (
-              <ContactsItem {...contact} key={contact.id} />
+              <ContactsItem contact={contact} key={contact.id} />
             ))}
           </Table.Body>
 
@@ -70,7 +71,7 @@ ContactsList.propTypes = {
   contactsData: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   contactsFetchRequest: PropTypes.func.isRequired,
   contactsLoading: PropTypes.bool.isRequired,
-  match: PropTypes.shape({}).isRequired,
+  match: matchType.isRequired,
 };
 
 export default ContactsList;

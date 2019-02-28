@@ -1,13 +1,15 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import get from 'lodash/get';
 import {Table} from 'semantic-ui-react';
 import moment from 'moment';
 
+import {contactType} from '../../constants/PropTypes';
 import Avatar from '../Avatar';
 
 const ContactsItem = ({
-  created, emails, firstName, lastName, profilePicture,
+  contact: {
+    created, emails, firstName, lastName, profilePicture,
+  },
 }) => (
   <Table.Row>
     <Table.Cell>
@@ -21,19 +23,17 @@ const ContactsItem = ({
 );
 
 ContactsItem.defaultProps = {
-  created: '',
-  emails: [],
-  firstName: '',
-  lastName: '',
-  profilePicture: null,
+  contact: {
+    created: '',
+    emails: [],
+    firstName: '',
+    lastName: '',
+    profilePicture: null,
+  },
 };
 
 ContactsItem.propTypes = {
-  created: PropTypes.number,
-  emails: PropTypes.arrayOf(PropTypes.shape({})),
-  firstName: PropTypes.string,
-  lastName: PropTypes.string,
-  profilePicture: PropTypes.string,
+  contact: contactType,
 };
 
 export default ContactsItem;
