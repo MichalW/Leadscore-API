@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header with icon 1`] = `
+<Header
+  as="h2"
+>
+  <Icon
+    as="i"
+    name="home"
+  />
+  <HeaderContent>
+    Example title
+    <HeaderSubheader>
+      Example subtitle
+    </HeaderSubheader>
+  </HeaderContent>
+</Header>
+`;
+
+exports[`should render Header with subtitle 1`] = `
+<Header
+  as="h2"
+>
+  <Icon
+    as="i"
+  />
+  <HeaderContent>
+    Example title
+    <HeaderSubheader>
+      Example subtitle
+    </HeaderSubheader>
+  </HeaderContent>
+</Header>
+`;
+
+exports[`should render Header with title 1`] = `
+<Header
+  as="h2"
+>
+  <Icon
+    as="i"
+  />
+  <HeaderContent>
+    Example title
+  </HeaderContent>
+</Header>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ContactsItem 1`] = `
+<TableRow
+  as="tr"
+  cellAs="td"
+>
+  <TableCell
+    as="td"
+  >
+    <Avatar
+      firstName="Example1"
+      lastName="Example2"
+      url={null}
+    />
+  </TableCell>
+  <TableCell
+    as="td"
+  >
+    Example1
+  </TableCell>
+  <TableCell
+    as="td"
+  >
+    Example2
+  </TableCell>
+  <TableCell
+    as="td"
+  >
+    example@example.com
+  </TableCell>
+  <TableCell
+    as="td"
+  >
+    Wed, Feb 27, 2019 11:48 AM
+  </TableCell>
+</TableRow>
+`;

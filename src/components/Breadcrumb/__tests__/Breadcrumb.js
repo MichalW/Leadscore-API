@@ -20,7 +20,7 @@ it('should render Breadcrumb on root', () => {
 it('should render Breadcrumb on page', () => {
   const props = {
     location: {
-      pathname: '/example'
+      pathname: '/example',
     },
   };
 

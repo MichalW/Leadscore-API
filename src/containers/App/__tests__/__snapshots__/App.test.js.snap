@@ -10,7 +10,7 @@ exports[`should render App signed in 1`] = `
     />
     <Route
       component={[Function]}
-      path="/contacts/:page?"
+      path="/contacts/:page?/:column?/:direction?"
     />
     <Route
       component={[Function]}

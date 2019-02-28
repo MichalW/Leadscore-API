@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Avatar with url 1`] = `
+<Image
+  alt=" "
+  as="img"
+  centered={true}
+  circular={true}
+  height="32"
+  src="https://example.com/avatar.png"
+  ui={true}
+  width="32"
+/>
+`;
+
+exports[`should render Avatar without url 1`] = `
+<div
+  className="placeholder"
+  style={
+    Object {
+      "backgroundColor": "rgb(183,55,71)",
+    }
+  }
+>
+  EU
+</div>
+`;

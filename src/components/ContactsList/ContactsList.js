@@ -23,12 +23,11 @@ class ContactsList extends PureComponent {
   }
 
   contactsFetch = () => {
-    const {contactsFetchRequest, match: {params}} = this.props;
+    const {contactsFetchRequest, match: {params: {page = 1, column, direction}}} = this.props;
 
-    const page = params.page || 1;
     const offset = (page - 1) * DEFAULT_CONTACTS_LIMIT;
 
-    contactsFetchRequest(offset, DEFAULT_CONTACTS_LIMIT);
+    contactsFetchRequest(offset, DEFAULT_CONTACTS_LIMIT, column, direction);
     this.scrollTop();
   };
 
@@ -47,12 +46,12 @@ class ContactsList extends PureComponent {
           </Dimmer>
         )}
 
-        <Table selectable striped color="blue">
+        <Table selectable sortable striped color="blue">
           <ContactsHeader />
 
           <Table.Body>
             {contactsData.map(contact => (
-              <ContactsItem contact={contact} key={contact.id} />
+              <ContactsItem {...contact} key={contact.id} />
             ))}
           </Table.Body>
 

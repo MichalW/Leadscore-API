@@ -6,7 +6,7 @@ it('should create signInRequest action', () => {
     type: types.SIGN_IN_REQUEST,
     payload: {
       username: 'Username1',
-      password: 'Password1'
+      password: 'Password1',
     },
   };
 

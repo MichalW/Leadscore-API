@@ -9,7 +9,9 @@
   },
   "globals": {
     "document": true,
-    "window": true
+    "window": true,
+    "it": true,
+    "expect": true
   },
   "parser": "babel-eslint"
 }

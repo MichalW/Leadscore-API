@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ContactsFooter 1`] = `
+<TableFooter
+  as="tfoot"
+>
+  <TableRow
+    as="tr"
+    cellAs="td"
+  >
+    <TableHeaderCell
+      as="th"
+    />
+    <TableHeaderCell
+      as="th"
+    />
+    <TableHeaderCell
+      as="th"
+    />
+    <TableHeaderCell
+      as="th"
+    />
+    <TableHeaderCell
+      as="th"
+      textAlign="right"
+    >
+      Example text
+    </TableHeaderCell>
+  </TableRow>
+</TableFooter>
+`;

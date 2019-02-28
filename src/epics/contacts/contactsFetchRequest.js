@@ -13,7 +13,7 @@ const generateUrl = ({
     `offset=${offset}`,
     `limit=${limit}`,
     `sort=${sort}`,
-    `sortDirection=${sortDirection}`,
+    `direction=${sortDirection}`,
   ].join('&');
 
   return `${API_URL}/contacts/filter?${params}`;

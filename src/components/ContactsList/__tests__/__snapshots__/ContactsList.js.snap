@@ -6,9 +6,10 @@ exports[`should render Contacts 1`] = `
     as="table"
     color="blue"
     selectable={true}
+    sortable={true}
     striped={true}
   >
-    <ContactsHeader />
+    <withRouter(ContactsHeader) />
     <TableBody
       as="tbody"
     />

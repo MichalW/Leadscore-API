@@ -1,6 +1,6 @@
 import {ActionsObservable} from 'redux-observable';
 
-import * as epics from '../../authentication';
+import * as epics from '../index';
 import * as types from '../../../constants/ActionTypes';
 
 it('should get SIGN_IN_SUCCESS from signInRequest', (done) => {
@@ -17,7 +17,7 @@ it('should get SIGN_IN_SUCCESS from signInRequest', (done) => {
     type: types.SIGN_IN_REQUEST,
     payload: {
       username: 'ExampleUsername',
-      password: 'ExamplePassword'
+      password: 'ExamplePassword',
     },
   });
 
@@ -33,6 +33,6 @@ it('should get SIGN_IN_SUCCESS from signInRequest', (done) => {
     (responseAction) => {
       expect(expectedOutput).toMatchObject(responseAction);
       done();
-    }
+    },
   );
 });

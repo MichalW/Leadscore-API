@@ -13,7 +13,7 @@ it('renders LoginForm without crashing', () => {
 
 it('renders LoginForm with error', () => {
   const tree = renderer
-    .create(<LoginForm signInRequest={() => {}} loading={false} error={true} />)
+    .create(<LoginForm signInRequest={() => {}} loading={false} error />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
@@ -21,7 +21,7 @@ it('renders LoginForm with error', () => {
 
 it('renders LoginForm with loading', () => {
   const tree = renderer
-    .create(<LoginForm signInRequest={() => {}} loading={true} error={false} />)
+    .create(<LoginForm signInRequest={() => {}} loading error={false} />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();

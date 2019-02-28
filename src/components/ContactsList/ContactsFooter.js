@@ -5,11 +5,13 @@ import {Table} from 'semantic-ui-react';
 const ContactsHeader = ({text}) => (
   <Table.Footer>
     <Table.Row>
-      <Table.HeaderCell>
+      <Table.HeaderCell />
+      <Table.HeaderCell />
+      <Table.HeaderCell />
+      <Table.HeaderCell />
+      <Table.HeaderCell textAlign="right">
         {text}
       </Table.HeaderCell>
-      <Table.HeaderCell />
-      <Table.HeaderCell />
     </Table.Row>
   </Table.Footer>
 );

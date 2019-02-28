@@ -1,6 +1,6 @@
 import {ActionsObservable} from 'redux-observable';
 
-import * as epics from '../../contacts';
+import * as epics from '../index';
 import * as types from '../../../constants/ActionTypes';
 
 it('should get CONTACTS_FETCH_SUCCESS from contactsFetchRequest', (done) => {

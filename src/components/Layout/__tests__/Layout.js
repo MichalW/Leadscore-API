@@ -13,7 +13,7 @@ it('renders Layout', () => {
   const layout = shallow(
     <Layout>
       <ExamplePage />
-    </Layout>
+    </Layout>,
   );
 
   expect(layout.find(Navbar).exists()).toBe(true);
