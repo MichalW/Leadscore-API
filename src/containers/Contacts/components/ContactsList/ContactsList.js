@@ -3,12 +3,12 @@ import React, {PureComponent} from 'react';
 import isEqual from 'lodash/isEqual';
 import {Loader, Dimmer, Table} from 'semantic-ui-react';
 
-import ContactsFooter from './ContactsFooter';
-import ContactsHeader from './components/ContactsHeader';
-import ContactsItem from './ContactsItem';
-import ContactsPagination from './components/ContactsPagination';
-import {DEFAULT_CONTACTS_LIMIT} from '../../config';
-import {matchType} from '../../constants/PropTypes';
+import ContactsFooter from '../ContactsFooter';
+import ContactsHeader from '../ContactsHeader';
+import ContactsItem from '../ContactsItem';
+import ContactsPagination from '../ContactsPagination';
+import {DEFAULT_CONTACTS_LIMIT} from '../../../../config';
+import {matchType} from '../../../../constants/PropTypes';
 
 const scrollTop = () => {
   window.scrollTo(0, 0);

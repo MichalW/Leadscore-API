@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid, Header} from 'semantic-ui-react';
 
-import LoginForm from '../../components/LoginForm';
+import LoginForm from './components/LoginForm';
 import styles from './Login.module.scss';
 
 const Login = () => (

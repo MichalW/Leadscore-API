@@ -3,7 +3,7 @@ import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 
 import Login from '../Login';
-import LoginForm from '../../../components/LoginForm';
+import LoginForm from '../components/LoginForm';
 
 it('renders Login without crashing', () => {
   const props = {

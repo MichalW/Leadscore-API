@@ -5,7 +5,7 @@ import {shallow} from 'enzyme';
 import Contacts from '../Contacts';
 import Layout from '../../../components/Layout';
 
-it('should render Home', () => {
+it('should render Contacts', () => {
   const props = {
     username: 'ExampleUsername',
   };

@@ -2,11 +2,20 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 
-import ContactsHeader from '../components/ContactsHeader';
+import ContactsHeader from '../ContactsHeader';
+import {DESC} from '../../../../../constants/ActionTypes';
 
 it('should render ContactsHeader', () => {
   const props = {
-    text: 'Example text',
+    history: {
+      push: () => {},
+    },
+    match: {
+      params: {
+        column: 10,
+        direction: DESC,
+      },
+    },
   };
 
   const contactsHeader = shallow(<ContactsHeader {...props} />);

@@ -2,7 +2,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 import LoginForm from './LoginForm';
-import {signInRequest} from '../../actions/authentication';
+import {signInRequest} from '../../../../actions/authentication';
 
 const mapStateToProps = ({authentication: {error, loading}}) => ({
   error,

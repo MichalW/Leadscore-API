@@ -3,8 +3,8 @@ import get from 'lodash/get';
 import {Table} from 'semantic-ui-react';
 import moment from 'moment';
 
-import {contactType} from '../../constants/PropTypes';
-import Avatar from '../Avatar';
+import {contactType} from '../../../constants/PropTypes';
+import Avatar from '../../../components/Avatar';
 
 const ContactsItem = ({
   contact: {

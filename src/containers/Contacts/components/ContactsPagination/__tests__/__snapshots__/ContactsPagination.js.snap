@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ContactsPagination 1`] = `
+<Container
+  textAlign="center"
+>
+  <Pagination
+    aria-label="Pagination Navigation"
+    boundaryRange={1}
+    defaultActivePage={1}
+    ellipsisItem="..."
+    firstItem={
+      Object {
+        "aria-label": "First item",
+        "content": "«",
+      }
+    }
+    lastItem={
+      Object {
+        "aria-label": "Last item",
+        "content": "»",
+      }
+    }
+    nextItem={
+      Object {
+        "aria-label": "Next item",
+        "content": "⟩",
+      }
+    }
+    onPageChange={[Function]}
+    pageItem={Object {}}
+    prevItem={
+      Object {
+        "aria-label": "Previous item",
+        "content": "⟨",
+      }
+    }
+    siblingRange={1}
+    totalPages={4}
+  />
+</Container>
+`;

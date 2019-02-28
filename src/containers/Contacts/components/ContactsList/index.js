@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {withRouter} from 'react-router-dom';
 
 import ContactsList from './ContactsList';
-import {contactsFetchRequest} from '../../actions/contacts';
+import {contactsFetchRequest} from '../../../../actions/contacts';
 
 const mapStateToProps = state => ({
   contactsCount: state.contacts.count,

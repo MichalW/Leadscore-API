@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ContactsHeader 1`] = `
+<TableHeader
+  as="thead"
+>
+  <TableRow
+    as="tr"
+    cellAs="td"
+  >
+    <TableHeaderCell
+      as="th"
+      style={
+        Object {
+          "width": "50px",
+        }
+      }
+      textAlign="center"
+    >
+      Avatar
+    </TableHeaderCell>
+    <TableHeaderCell
+      as="th"
+      onClick={[Function]}
+      sorted={null}
+    >
+      First name
+    </TableHeaderCell>
+    <TableHeaderCell
+      as="th"
+      onClick={[Function]}
+      sorted={null}
+    >
+      Last name
+    </TableHeaderCell>
+    <TableHeaderCell
+      as="th"
+    >
+      Email
+    </TableHeaderCell>
+    <TableHeaderCell
+      as="th"
+      onClick={[Function]}
+      sorted={null}
+    >
+      Created At
+    </TableHeaderCell>
+  </TableRow>
+</TableHeader>
+`;
