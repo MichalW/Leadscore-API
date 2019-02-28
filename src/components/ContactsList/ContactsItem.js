@@ -18,7 +18,7 @@ const ContactsItem = ({
     <Table.Cell>{firstName}</Table.Cell>
     <Table.Cell>{lastName}</Table.Cell>
     <Table.Cell>{get(emails, [0, 'email'])}</Table.Cell>
-    <Table.Cell>{moment(created).format('llll')}</Table.Cell>
+    <Table.Cell>{moment(created).utc().format('llll')}</Table.Cell>
   </Table.Row>
 );
 
