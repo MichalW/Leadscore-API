@@ -6,6 +6,7 @@ exports[`should render Home 1`] = `
     <HeaderComponent
       icon="users"
       subTitle="Manage your contacts"
+      subtitle={null}
       title="Contacts"
     />
     <withRouter(Connect(ContactsList)) />

@@ -4,11 +4,15 @@ import isEqual from 'lodash/isEqual';
 import {Loader, Dimmer, Table} from 'semantic-ui-react';
 
 import ContactsFooter from './ContactsFooter';
-import ContactsHeader from './ContactsHeader';
+import ContactsHeader from './components/ContactsHeader';
 import ContactsItem from './ContactsItem';
-import ContactsPagination from './ContactsPagination';
+import ContactsPagination from './components/ContactsPagination';
 import {DEFAULT_CONTACTS_LIMIT} from '../../config';
 import {matchType} from '../../constants/PropTypes';
+
+const scrollTop = () => {
+  window.scrollTo(0, 0);
+};
 
 class ContactsList extends PureComponent {
   componentDidMount() {
@@ -23,18 +27,14 @@ class ContactsList extends PureComponent {
     }
   }
 
-  contactsFetch = () => {
+  contactsFetch() {
     const {contactsFetchRequest, match: {params: {page = 1, column, direction}}} = this.props;
 
     const offset = (page - 1) * DEFAULT_CONTACTS_LIMIT;
 
     contactsFetchRequest(offset, DEFAULT_CONTACTS_LIMIT, column, direction);
-    this.scrollTop();
-  };
-
-  scrollTop = () => {
-    window.scrollTo(0, 0);
-  };
+    scrollTop();
+  }
 
   render() {
     const {contactsData, contactsCount, contactsLoading} = this.props;

@@ -5,6 +5,7 @@ exports[`should render Home 1`] = `
   <Segment>
     <HeaderComponent
       icon="home"
+      subtitle={null}
       title="Home"
     />
     <p>

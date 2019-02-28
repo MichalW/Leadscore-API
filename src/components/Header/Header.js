@@ -17,8 +17,8 @@ const HeaderComponent = ({title, subtitle, icon}) => (
 );
 
 HeaderComponent.defaultProps = {
-  subtitle: undefined,
-  icon: undefined,
+  subtitle: null,
+  icon: null,
 };
 
 HeaderComponent.propTypes = {

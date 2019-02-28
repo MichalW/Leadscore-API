@@ -3,7 +3,7 @@ import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 
 import ContactsList from '../ContactsList';
-import ContactsHeader from '../ContactsHeader';
+import ContactsHeader from '../components/ContactsHeader';
 
 it('should render Contacts', () => {
   window.scrollTo = () => {};

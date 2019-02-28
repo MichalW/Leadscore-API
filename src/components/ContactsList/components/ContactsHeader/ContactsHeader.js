@@ -3,9 +3,9 @@ import {Table} from 'semantic-ui-react';
 
 import {
   ASC, ASCENDING, DESC, DESCENDING,
-} from '../../../constants/ActionTypes';
-import {DEFAULT_CONTACTS_SORT, DEFAULT_CONTACTS_SORT_DIRECTION} from '../../../config';
-import {historyType, matchType} from '../../../constants/PropTypes';
+} from '../../../../constants/ActionTypes';
+import {DEFAULT_CONTACTS_SORT, DEFAULT_CONTACTS_SORT_DIRECTION} from '../../../../config';
+import {historyType, matchType} from '../../../../constants/PropTypes';
 
 const tableDirectionMap = {
   ASC: ASCENDING,
@@ -38,12 +38,12 @@ class ContactsHeader extends PureComponent {
     }
   };
 
-  historyPush = () => {
+  historyPush() {
     const {history} = this.props;
     const {column, direction} = this.state;
 
     history.push(`/contacts/1/${column}/${direction}`);
-  };
+  }
 
   render() {
     const {column, direction} = this.state;

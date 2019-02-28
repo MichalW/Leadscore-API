@@ -2,7 +2,7 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 
-import ContactsHeader from '../ContactsHeader';
+import ContactsHeader from '../components/ContactsHeader';
 
 it('should render ContactsHeader', () => {
   const props = {

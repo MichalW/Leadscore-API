@@ -23,6 +23,7 @@ exports[`should render Header with subtitle 1`] = `
 >
   <Icon
     as="i"
+    name={null}
   />
   <HeaderContent>
     Example title
@@ -39,6 +40,7 @@ exports[`should render Header with title 1`] = `
 >
   <Icon
     as="i"
+    name={null}
   />
   <HeaderContent>
     Example title

@@ -2,7 +2,7 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import {shallow} from 'enzyme';
 
-import ContactsPagination from '../ContactsPagination';
+import ContactsPagination from '../components/ContactsPagination';
 
 it('should render ContactsPagination', () => {
   const props = {};

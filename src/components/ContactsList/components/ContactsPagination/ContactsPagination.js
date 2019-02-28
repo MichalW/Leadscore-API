@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React, {PureComponent} from 'react';
 import {Container, Pagination} from 'semantic-ui-react';
 
-import {DEFAULT_CONTACTS_LIMIT} from '../../../config';
-import {historyType} from '../../../constants/PropTypes';
+import {DEFAULT_CONTACTS_LIMIT} from '../../../../config';
+import {historyType} from '../../../../constants/PropTypes';
 
 class ContactsPagination extends PureComponent {
   onPageChange = (event, {activePage}) => {
