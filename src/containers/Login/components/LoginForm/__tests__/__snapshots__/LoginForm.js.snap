@@ -9,40 +9,40 @@ exports[`renders LoginForm with error 1`] = `
     className="ui segment"
   >
     <div
-      className="field"
+      className="required field"
     >
-      <div
-        className="ui label"
-        onClick={[Function]}
-      >
+      <label>
         Login
-      </div>
+      </label>
       <div
         className="ui input"
       >
         <input
           onChange={[Function]}
           placeholder="Login"
+          required={true}
           type="text"
           value=""
         />
       </div>
     </div>
     <div
-      className="field"
+      className="required field"
     >
-      <div
-        className="ui label"
-        onClick={[Function]}
-      >
+      <label>
         Password
+      </label>
+      <div
+        className="ui input"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Password"
+          required={true}
+          type="password"
+          value=""
+        />
       </div>
-      <input
-        onChange={[Function]}
-        placeholder="Password"
-        type="password"
-        value=""
-      />
     </div>
     <div
       className="ui negative message"
@@ -71,40 +71,40 @@ exports[`renders LoginForm with loading 1`] = `
     className="ui segment"
   >
     <div
-      className="field"
+      className="required field"
     >
-      <div
-        className="ui label"
-        onClick={[Function]}
-      >
+      <label>
         Login
-      </div>
+      </label>
       <div
         className="ui input"
       >
         <input
           onChange={[Function]}
           placeholder="Login"
+          required={true}
           type="text"
           value=""
         />
       </div>
     </div>
     <div
-      className="field"
+      className="required field"
     >
-      <div
-        className="ui label"
-        onClick={[Function]}
-      >
+      <label>
         Password
+      </label>
+      <div
+        className="ui input"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Password"
+          required={true}
+          type="password"
+          value=""
+        />
       </div>
-      <input
-        onChange={[Function]}
-        placeholder="Password"
-        type="password"
-        value=""
-      />
     </div>
     <button
       className="ui fluid loading primary button"
@@ -126,40 +126,40 @@ exports[`renders LoginForm without crashing 1`] = `
     className="ui segment"
   >
     <div
-      className="field"
+      className="required field"
     >
-      <div
-        className="ui label"
-        onClick={[Function]}
-      >
+      <label>
         Login
-      </div>
+      </label>
       <div
         className="ui input"
       >
         <input
           onChange={[Function]}
           placeholder="Login"
+          required={true}
           type="text"
           value=""
         />
       </div>
     </div>
     <div
-      className="field"
+      className="required field"
     >
-      <div
-        className="ui label"
-        onClick={[Function]}
-      >
+      <label>
         Password
+      </label>
+      <div
+        className="ui input"
+      >
+        <input
+          onChange={[Function]}
+          placeholder="Password"
+          required={true}
+          type="password"
+          value=""
+        />
       </div>
-      <input
-        onChange={[Function]}
-        placeholder="Password"
-        type="password"
-        value=""
-      />
     </div>
     <button
       className="ui fluid primary button"

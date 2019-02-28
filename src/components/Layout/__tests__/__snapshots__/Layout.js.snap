@@ -2,7 +2,9 @@
 
 exports[`renders Layout 1`] = `
 <Container>
-  <Connect(Navbar) />
+  <Navbar
+    onSignOut={[Function]}
+  />
   <withRouter(BreadcrumbComponent) />
   <Grid
     centered={true}

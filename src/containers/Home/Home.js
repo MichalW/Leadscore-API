@@ -6,8 +6,8 @@ import Header from '../../components/Header';
 import Layout from '../../components/Layout';
 import styles from './Home.module.scss';
 
-const Home = ({username}) => (
-  <Layout>
+const Home = ({username, signOutRequest}) => (
+  <Layout onSignOut={signOutRequest}>
     <Segment className={styles.wrapper}>
       <Header title="Home" icon="home" />
 
@@ -24,6 +24,7 @@ Home.defaultProps = {
 };
 
 Home.propTypes = {
+  signOutRequest: PropTypes.func.isRequired,
   username: PropTypes.string,
 };
 

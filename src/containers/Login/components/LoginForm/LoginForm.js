@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import {
-  Button, Form, Input, Label, Segment, Message,
+  Button, Form, Input, Message, Segment,
 } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
@@ -32,15 +32,24 @@ class LoginForm extends PureComponent {
     return (
       <Form onSubmit={this.onSubmit}>
         <Segment>
-          <Form.Field>
-            <Label>Login</Label>
-            <Input placeholder="Login" onChange={this.onChangeUsername} value={username} />
-          </Form.Field>
+          <Form.Field
+            control={Input}
+            label="Login"
+            onChange={this.onChangeUsername}
+            placeholder="Login"
+            required
+            value={username}
+          />
 
-          <Form.Field>
-            <Label>Password</Label>
-            <input placeholder="Password" type="password" onChange={this.onChangePassword} value={password} />
-          </Form.Field>
+          <Form.Field
+            control={Input}
+            label="Password"
+            onChange={this.onChangePassword}
+            placeholder="Password"
+            required
+            type="password"
+            value={password}
+          />
 
           {error && (
             <Message negative>

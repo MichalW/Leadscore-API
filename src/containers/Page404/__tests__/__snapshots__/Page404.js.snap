@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Page404 1`] = `
-<Layout>
+<Layout
+  onSignOut={[Function]}
+>
   <Segment>
     <HeaderComponent
       icon="times"

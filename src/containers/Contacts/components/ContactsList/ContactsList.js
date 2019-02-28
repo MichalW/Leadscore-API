@@ -7,12 +7,9 @@ import ContactsFooter from '../ContactsFooter';
 import ContactsHeader from '../ContactsHeader';
 import ContactsItem from '../ContactsItem';
 import ContactsPagination from '../ContactsPagination';
+import scrollTop from '../../../../utils/scrollTop';
 import {DEFAULT_CONTACTS_LIMIT} from '../../../../config';
 import {matchType} from '../../../../constants/PropTypes';
-
-const scrollTop = () => {
-  window.scrollTo(0, 0);
-};
 
 class ContactsList extends PureComponent {
   componentDidMount() {
@@ -64,7 +61,6 @@ class ContactsList extends PureComponent {
     );
   }
 }
-
 
 ContactsList.propTypes = {
   contactsCount: PropTypes.number.isRequired,

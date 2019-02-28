@@ -6,7 +6,7 @@ import Navbar from '../Navbar';
 
 it('renders Navbar without crashing', () => {
   const props = {
-    signOutRequest: () => {},
+    onSignOut: () => {},
   };
 
   const navbar = shallow(<Navbar {...props} />);

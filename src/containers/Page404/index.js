@@ -1,3 +1,11 @@
-import Page404 from './Page404';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
-export default Page404;
+import Page404 from './Page404';
+import {signOutRequest} from '../../actions/authentication';
+
+const mapDispatchToProps = dispatch => ({
+  signOutRequest: bindActionCreators(signOutRequest, dispatch),
+});
+
+export default connect(null, mapDispatchToProps)(Page404);

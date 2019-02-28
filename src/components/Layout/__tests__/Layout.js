@@ -6,12 +6,16 @@ import Layout from '../Layout';
 import Navbar from '../../Navbar';
 
 it('renders Layout', () => {
+  const props = {
+    onSignOut: () => {},
+  };
+
   const ExamplePage = () => (
     <div>Example text</div>
   );
 
   const layout = shallow(
-    <Layout>
+    <Layout {...props}>
       <ExamplePage />
     </Layout>,
   );

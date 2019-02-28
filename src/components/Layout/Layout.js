@@ -5,9 +5,9 @@ import {Container, Grid} from 'semantic-ui-react';
 import Navbar from '../Navbar';
 import Breadcrumb from '../Breadcrumb';
 
-const Layout = ({children}) => (
+const Layout = ({children, onSignOut}) => (
   <Container>
-    <Navbar />
+    <Navbar onSignOut={onSignOut} />
 
     <Breadcrumb />
 
@@ -26,6 +26,7 @@ Layout.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  onSignOut: PropTypes.func.isRequired,
 };
 
 export default Layout;

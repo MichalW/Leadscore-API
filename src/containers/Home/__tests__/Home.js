@@ -7,6 +7,7 @@ import Layout from '../../../components/Layout';
 
 it('should render Home', () => {
   const props = {
+    signOutRequest: () => {},
     username: 'ExampleUsername',
   };
 

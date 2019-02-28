@@ -9,7 +9,6 @@ const Login = () => (
     centered
     className={styles.wrapper}
     columns={3}
-    style={{minHeight: '100vh'}}
     verticalAlign="middle"
   >
     <Grid.Row>
