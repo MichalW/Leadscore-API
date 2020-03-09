@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import Page404 from './Page404';
 import {signOutRequest} from '../../actions/authentication';
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   signOutRequest: bindActionCreators(signOutRequest, dispatch),
 });
 

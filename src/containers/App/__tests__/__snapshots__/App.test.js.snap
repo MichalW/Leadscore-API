@@ -4,16 +4,40 @@ exports[`should render App signed in 1`] = `
 <BrowserRouter>
   <Switch>
     <Route
-      component={[Function]}
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(Home)",
+          "type": [Function],
+        }
+      }
       exact={true}
       path="/"
     />
     <Route
-      component={[Function]}
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(Contacts)",
+          "type": [Function],
+        }
+      }
       path="/contacts/:page?/:column?/:direction?"
     />
     <Route
-      component={[Function]}
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(Page404)",
+          "type": [Function],
+        }
+      }
     />
   </Switch>
 </BrowserRouter>

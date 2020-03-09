@@ -3,7 +3,7 @@ import {withRouter} from 'react-router-dom';
 
 import ContactsPagination from './ContactsPagination';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   contactsCount: state.contacts.count,
 });
 

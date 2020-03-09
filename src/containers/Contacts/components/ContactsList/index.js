@@ -5,13 +5,13 @@ import {withRouter} from 'react-router-dom';
 import ContactsList from './ContactsList';
 import {contactsFetchRequest} from '../../../../actions/contacts';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   contactsCount: state.contacts.count,
   contactsData: state.contacts.data,
   contactsLoading: state.contacts.loading,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   contactsFetchRequest: bindActionCreators(contactsFetchRequest, dispatch),
 });
 

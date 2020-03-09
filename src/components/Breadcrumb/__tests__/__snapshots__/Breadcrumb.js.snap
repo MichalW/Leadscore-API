@@ -6,7 +6,20 @@ exports[`should render Breadcrumb on page 1`] = `
     <GridColumn>
       <Breadcrumb>
         <BreadcrumbSection
-          as={[Function]}
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "Link",
+              "propTypes": Object {
+                "innerRef": [Function],
+                "onClick": [Function],
+                "replace": [Function],
+                "target": [Function],
+                "to": [Function],
+              },
+              "render": [Function],
+            }
+          }
           link={true}
           to="/"
         >
@@ -33,7 +46,20 @@ exports[`should render Breadcrumb on root 1`] = `
     <GridColumn>
       <Breadcrumb>
         <BreadcrumbSection
-          as={[Function]}
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "Link",
+              "propTypes": Object {
+                "innerRef": [Function],
+                "onClick": [Function],
+                "replace": [Function],
+                "target": [Function],
+                "to": [Function],
+              },
+              "render": [Function],
+            }
+          }
           link={true}
           to="/"
         >

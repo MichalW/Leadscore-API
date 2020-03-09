@@ -32,7 +32,7 @@ export const contactsFetchSuccess = (
   },
 });
 
-export const contactsFetchError = error => ({
+export const contactsFetchError = (error) => ({
   type: types.CONTACTS_FETCH_ERROR,
   payload: {
     error,

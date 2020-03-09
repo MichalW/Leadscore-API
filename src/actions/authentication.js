@@ -16,7 +16,7 @@ export const signInSuccess = (token, user) => ({
   },
 });
 
-export const signInError = error => ({
+export const signInError = (error) => ({
   type: types.SIGN_IN_ERROR,
   payload: {
     error,
@@ -31,7 +31,7 @@ export const signOutSuccess = () => ({
   type: types.SIGN_OUT_SUCCESS,
 });
 
-export const signOutError = error => ({
+export const signOutError = (error) => ({
   type: types.SIGN_OUT_ERROR,
   payload: {
     error,

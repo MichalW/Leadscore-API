@@ -23,7 +23,7 @@ class ContactsHeader extends PureComponent {
     };
   }
 
-  handleSort = clickedColumn => () => {
+  handleSort = (clickedColumn) => () => {
     const {column, direction} = this.state;
 
     if (column !== clickedColumn) {

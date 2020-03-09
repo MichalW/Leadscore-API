@@ -20,7 +20,7 @@ const signOutRequest = (action$, state$, {ajax}) => action$.pipe(
     }),
   }).pipe(
     map(signOutSuccess),
-    catchError(error => of(signOutError(error))),
+    catchError((error) => of(signOutError(error))),
   )),
 );
 

@@ -16,7 +16,7 @@ const Avatar = ({url, firstName, lastName}) => {
 
   const initials = [firstName, lastName]
     .map(upperCase)
-    .map(text => get(text, '0', ''))
+    .map((text) => get(text, '0', ''))
     .join('');
 
   const color = getColorFromInitials(initials);

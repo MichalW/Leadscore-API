@@ -18,6 +18,7 @@ exports[`renders LoginForm with error 1`] = `
         className="ui input"
       >
         <input
+          aria-describedby={null}
           onChange={[Function]}
           placeholder="Login"
           required={true}
@@ -36,6 +37,7 @@ exports[`renders LoginForm with error 1`] = `
         className="ui input"
       >
         <input
+          aria-describedby={null}
           onChange={[Function]}
           placeholder="Password"
           required={true}
@@ -80,6 +82,7 @@ exports[`renders LoginForm with loading 1`] = `
         className="ui input"
       >
         <input
+          aria-describedby={null}
           onChange={[Function]}
           placeholder="Login"
           required={true}
@@ -98,6 +101,7 @@ exports[`renders LoginForm with loading 1`] = `
         className="ui input"
       >
         <input
+          aria-describedby={null}
           onChange={[Function]}
           placeholder="Password"
           required={true}
@@ -135,6 +139,7 @@ exports[`renders LoginForm without crashing 1`] = `
         className="ui input"
       >
         <input
+          aria-describedby={null}
           onChange={[Function]}
           placeholder="Login"
           required={true}
@@ -153,6 +158,7 @@ exports[`renders LoginForm without crashing 1`] = `
         className="ui input"
       >
         <input
+          aria-describedby={null}
           onChange={[Function]}
           placeholder="Password"
           required={true}

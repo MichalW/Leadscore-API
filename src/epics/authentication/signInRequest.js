@@ -20,7 +20,7 @@ const signInRequest = (action$, state$, {ajax}) => action$.pipe(
     }),
   }).pipe(
     map(({response: {token, user}}) => signInSuccess(token, user)),
-    catchError(error => of(signInError(error))),
+    catchError((error) => of(signInError(error))),
   )),
 );
 

@@ -9,7 +9,7 @@ const mapStateToProps = ({authentication: {error, loading}}) => ({
   loading,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   signInRequest: bindActionCreators(signInRequest, dispatch),
 });
 

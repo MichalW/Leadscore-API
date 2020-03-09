@@ -21,7 +21,7 @@ const generateUrl = ({
 
 const contactsFetchRequest = (action$, state$, {ajax}) => action$.pipe(
   ofType(CONTACTS_FETCH_REQUEST),
-  mergeMap(action => ajax({
+  mergeMap((action) => ajax({
     url: generateUrl(action.payload),
     method: 'POST',
     headers: {
@@ -37,7 +37,7 @@ const contactsFetchRequest = (action$, state$, {ajax}) => action$.pipe(
     }) => (
       contactsFetchSuccess(offset, limit, count, data)
     )),
-    catchError(error => of(contactsFetchError(error))),
+    catchError((error) => of(contactsFetchError(error))),
   )),
 );
 

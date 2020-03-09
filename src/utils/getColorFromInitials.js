@@ -9,9 +9,9 @@ const DEFAULT_INITIALS = 'AA';
 const getColorFromInitials = (initials) => {
   const numbers = `${initials}${DEFAULT_INITIALS}`
     .split('')
-    .map(char => char.charCodeAt(0))
-    .map(number => (number - FIRST_CHAR_NUMBER + 1) * FACTOR)
-    .map(number => clamp(number, MIN_COLOR_NUMBER, MAX_COLOR_NUMBER));
+    .map((char) => char.charCodeAt(0))
+    .map((number) => (number - FIRST_CHAR_NUMBER + 1) * FACTOR)
+    .map((number) => clamp(number, MIN_COLOR_NUMBER, MAX_COLOR_NUMBER));
 
   const rgb = [
     MAX_COLOR_NUMBER - numbers[0],

@@ -48,7 +48,7 @@ class ContactsList extends PureComponent {
           <ContactsHeader />
 
           <Table.Body>
-            {contactsData.map(contact => (
+            {contactsData.map((contact) => (
               <ContactsItem contact={contact} key={contact.id} />
             ))}
           </Table.Body>

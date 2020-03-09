@@ -4,11 +4,11 @@ import {connect} from 'react-redux';
 import Home from './Home';
 import {signOutRequest} from '../../actions/authentication';
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   username: state.authentication.user.username,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   signOutRequest: bindActionCreators(signOutRequest, dispatch),
 });
 
